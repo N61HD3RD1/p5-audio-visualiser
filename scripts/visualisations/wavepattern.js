@@ -1,10 +1,11 @@
 //draw the waveform to the screen
 function WavePattern(){
 	//vis name
-	this.name = "wavepattern";
+	this.name = "Wavepattern";
 
 	//draw the wave form to the screen
 	this.draw = function(){
+		colorMode(RGB); 
 		push();
 		noFill();
 		stroke(255, 0, 0);
@@ -12,7 +13,7 @@ function WavePattern(){
 
 		beginShape();
 		//calculate the waveform from the fft.
-		var wave = fourier.waveform();
+		var wave = fourier.waveform(1024);
 		for (var i = 0; i < wave.length; i++){
 			//for each element of the waveform map it to screen 
 			//coordinates and make a new vertex at the point.

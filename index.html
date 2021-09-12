@@ -1,23 +1,321 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <head>
+    <!--LIBARIES-->
+    <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/p5.min.js"></script>
-    <script src="lib/p5.sound.js"></script>
+    <script src="lib/p5.sound.min.js"></script>
+    <script src="lib/p5.dom.min.js"></script>
     
-    <script src="sketch.js"></script>
-    <script src="controlsAndInput.js"></script>
-    <script src="playbackButton.js"></script>
-    <script src="visualisations.js"></script>
+    <!--MAIN-->
+    <script src="scripts/sketch.js"></script>
+    <script src="scripts/Interface.js"></script>
+    <script src="scripts/Visualisations.js"></script>
+    <script src="scripts/helperFunctions.js"></script>
+    <!--UI-->
+    <script src="scripts/ui/PlaybackButton.js"></script>
+    <script src="scripts/ui/MicButton.js"></script>
+    <script src="scripts/ui/LoopButton.js"></script>
+    <script src="scripts/ui/ProgressSlider.js"></script>
+    <script src="scripts/ui/FFTSlider.js"></script>
 
-    <script src="needles.js"></script>
-    <script src="wavepattern.js"></script>
-    <script src="spectrum.js"></script>
+    <!--VISUALISATIONS-->
+    <script src="scripts/visualisations/circlular.js"></script>
+    <script src="scripts/visualisations/spectrograph.js"></script>
+    <script src="scripts/visualisations/spectrum.js"></script>
+    <script src="scripts/visualisations/wavepattern.js"></script>
+    <script src="scripts/visualisations/Phylloaxis.js"></script>
+    <script src="scripts/visualisations/Rain.js"></script>
 
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-
-    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
-  <style> body {padding: 0; margin: 0;} </style>
   </head>
   <body>
+      <div class="dropdownContainer" id=dropdownContainerMenu>
+          <button class="dropdownButton" id="dropdownButtonMenu">MENU</button>
+          <div class="dropdownList" id="dropdownListMenu">
+          </div>
+        </div> 
   </body>
+
 </html>
